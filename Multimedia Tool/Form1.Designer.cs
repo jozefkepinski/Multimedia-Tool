@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.panelSideMenu = new System.Windows.Forms.Panel();
             this.panelLogo = new System.Windows.Forms.Panel();
             this.button1 = new System.Windows.Forms.Button();
@@ -38,9 +39,13 @@
             this.panelSubAbout = new System.Windows.Forms.Panel();
             this.btnVersion = new System.Windows.Forms.Button();
             this.btnAppInfo = new System.Windows.Forms.Button();
+            this.panelChildForm = new System.Windows.Forms.Panel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panelSideMenu.SuspendLayout();
             this.panelArchiveSubMenu.SuspendLayout();
             this.panelSubAbout.SuspendLayout();
+            this.panelChildForm.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // panelSideMenu
@@ -80,6 +85,7 @@
             this.button1.Text = "Archive";
             this.button1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // panelArchiveSubMenu
             // 
@@ -106,6 +112,7 @@
             this.btCreate.Text = "Create";
             this.btCreate.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btCreate.UseVisualStyleBackColor = true;
+            this.btCreate.Click += new System.EventHandler(this.btCreate_Click);
             // 
             // btExtract
             // 
@@ -121,6 +128,7 @@
             this.btExtract.Text = "Extract";
             this.btExtract.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btExtract.UseVisualStyleBackColor = true;
+            this.btExtract.Click += new System.EventHandler(this.btExtract_Click);
             // 
             // btnAboutSubMenu
             // 
@@ -136,6 +144,7 @@
             this.btnAboutSubMenu.Text = "About";
             this.btnAboutSubMenu.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnAboutSubMenu.UseVisualStyleBackColor = true;
+            this.btnAboutSubMenu.Click += new System.EventHandler(this.btnAboutSubMenu_Click);
             // 
             // panelSubAbout
             // 
@@ -162,6 +171,7 @@
             this.btnVersion.Text = "Version";
             this.btnVersion.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnVersion.UseVisualStyleBackColor = true;
+            this.btnVersion.Click += new System.EventHandler(this.btnVersion_Click);
             // 
             // btnAppInfo
             // 
@@ -177,20 +187,45 @@
             this.btnAppInfo.Text = "App info";
             this.btnAppInfo.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnAppInfo.UseVisualStyleBackColor = true;
+            this.btnAppInfo.Click += new System.EventHandler(this.btnAppInfo_Click);
+            // 
+            // panelChildForm
+            // 
+            this.panelChildForm.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(21)))), ((int)(((byte)(32)))));
+            this.panelChildForm.Controls.Add(this.pictureBox1);
+            this.panelChildForm.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panelChildForm.Location = new System.Drawing.Point(250, 0);
+            this.panelChildForm.Name = "panelChildForm";
+            this.panelChildForm.Size = new System.Drawing.Size(678, 544);
+            this.panelChildForm.TabIndex = 1;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(242, 145);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(200, 185);
+            this.pictureBox1.TabIndex = 0;
+            this.pictureBox1.TabStop = false;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(928, 544);
+            this.Controls.Add(this.panelChildForm);
             this.Controls.Add(this.panelSideMenu);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.Margin = new System.Windows.Forms.Padding(4);
+            this.MinimumSize = new System.Drawing.Size(750, 600);
             this.Name = "Form1";
             this.Text = "Form1";
             this.panelSideMenu.ResumeLayout(false);
             this.panelArchiveSubMenu.ResumeLayout(false);
             this.panelSubAbout.ResumeLayout(false);
+            this.panelChildForm.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -207,6 +242,8 @@
         private System.Windows.Forms.Button btCreate;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Panel panelLogo;
+        private System.Windows.Forms.Panel panelChildForm;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }
 
