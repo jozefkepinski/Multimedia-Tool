@@ -109,7 +109,7 @@ namespace Multimedia_Tool
             {
                 CBCompresiontype.Items.Add(item);
             }
-
+            CBCompresiontype.SelectedIndex = 0;
         }
         public CompressionLevel CompressionLevelFunc(string compLevel)
         {

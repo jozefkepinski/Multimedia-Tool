@@ -36,6 +36,7 @@
             this.btnSelectDirectoryPath = new System.Windows.Forms.Button();
             this.btnSelectOutputZip = new System.Windows.Forms.Button();
             this.CBCompresiontype = new System.Windows.Forms.ComboBox();
+            this.label1 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // labelSelectedDirectory
@@ -104,17 +105,27 @@
             // CBCompresiontype
             // 
             this.CBCompresiontype.FormattingEnabled = true;
-            this.CBCompresiontype.Location = new System.Drawing.Point(16, 236);
+            this.CBCompresiontype.Location = new System.Drawing.Point(16, 246);
             this.CBCompresiontype.Name = "CBCompresiontype";
             this.CBCompresiontype.Size = new System.Drawing.Size(121, 28);
             this.CBCompresiontype.TabIndex = 7;
             this.CBCompresiontype.SelectedValueChanged += new System.EventHandler(this.CBCompresiontype_SelectedValueChanged);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(12, 220);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(141, 20);
+            this.label1.TabIndex = 8;
+            this.label1.Text = "Compression level:";
             // 
             // AddArchive
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(678, 544);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.CBCompresiontype);
             this.Controls.Add(this.btnSelectOutputZip);
             this.Controls.Add(this.btnSelectDirectoryPath);
@@ -141,5 +152,6 @@
         private System.Windows.Forms.Button btnSelectDirectoryPath;
         private System.Windows.Forms.Button btnSelectOutputZip;
         private System.Windows.Forms.ComboBox CBCompresiontype;
+        private System.Windows.Forms.Label label1;
     }
 }

@@ -81,7 +81,7 @@ namespace Multimedia_Tool
         private void btExtract_Click(object sender, EventArgs e)
         {
 
-
+            OpenChildForm(new ExtractArchive());
 
             HideSubmenu();
         }
