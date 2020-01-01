@@ -55,10 +55,9 @@
             // 
             // btnSelectZip
             // 
-            this.btnSelectZip.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnSelectZip.Location = new System.Drawing.Point(17, 86);
+            this.btnSelectZip.Location = new System.Drawing.Point(12, 86);
             this.btnSelectZip.Name = "btnSelectZip";
-            this.btnSelectZip.Size = new System.Drawing.Size(127, 26);
+            this.btnSelectZip.Size = new System.Drawing.Size(127, 30);
             this.btnSelectZip.TabIndex = 2;
             this.btnSelectZip.Text = "Select Zip file";
             this.btnSelectZip.UseVisualStyleBackColor = true;
@@ -75,17 +74,16 @@
             // 
             // textBoxExtractionDir
             // 
-            this.textBoxExtractionDir.Location = new System.Drawing.Point(17, 176);
+            this.textBoxExtractionDir.Location = new System.Drawing.Point(13, 176);
             this.textBoxExtractionDir.Name = "textBoxExtractionDir";
             this.textBoxExtractionDir.Size = new System.Drawing.Size(484, 26);
             this.textBoxExtractionDir.TabIndex = 4;
             // 
             // btnSelectExtrDir
             // 
-            this.btnSelectExtrDir.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnSelectExtrDir.Location = new System.Drawing.Point(21, 208);
+            this.btnSelectExtrDir.Location = new System.Drawing.Point(13, 208);
             this.btnSelectExtrDir.Name = "btnSelectExtrDir";
-            this.btnSelectExtrDir.Size = new System.Drawing.Size(185, 26);
+            this.btnSelectExtrDir.Size = new System.Drawing.Size(185, 30);
             this.btnSelectExtrDir.TabIndex = 5;
             this.btnSelectExtrDir.Text = "Select Extract directory";
             this.btnSelectExtrDir.UseVisualStyleBackColor = true;

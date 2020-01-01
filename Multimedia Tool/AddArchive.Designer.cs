@@ -134,7 +134,6 @@
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.labelOutputFIle);
             this.Controls.Add(this.labelSelectedDirectory);
-            this.MinimumSize = new System.Drawing.Size(517, 489);
             this.Name = "AddArchive";
             this.Text = "AddArchive";
             this.ResumeLayout(false);
