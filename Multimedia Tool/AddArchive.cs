@@ -135,5 +135,10 @@ namespace Multimedia_Tool
             //CBCompresiontype.Items.Refresh();
             compressionLevelString = CBCompresiontype.Text;
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Close();
+        }
     }
 }

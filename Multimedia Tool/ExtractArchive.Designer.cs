@@ -35,6 +35,7 @@
             this.textBoxExtractionDir = new System.Windows.Forms.TextBox();
             this.btnSelectExtrDir = new System.Windows.Forms.Button();
             this.btnExtractArchive = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -100,11 +101,23 @@
             this.btnExtractArchive.UseVisualStyleBackColor = true;
             this.btnExtractArchive.Click += new System.EventHandler(this.btnExtractArchive_Click);
             // 
+            // button1
+            // 
+            this.button1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.button1.Location = new System.Drawing.Point(615, 28);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(40, 33);
+            this.button1.TabIndex = 7;
+            this.button1.Text = "X";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
             // ExtractArchive
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(678, 544);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.btnExtractArchive);
             this.Controls.Add(this.btnSelectExtrDir);
             this.Controls.Add(this.textBoxExtractionDir);
@@ -128,5 +141,6 @@
         private System.Windows.Forms.TextBox textBoxExtractionDir;
         private System.Windows.Forms.Button btnSelectExtrDir;
         private System.Windows.Forms.Button btnExtractArchive;
+        private System.Windows.Forms.Button button1;
     }
 }

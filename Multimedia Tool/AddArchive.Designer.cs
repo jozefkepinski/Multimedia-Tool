@@ -37,6 +37,7 @@
             this.btnSelectOutputZip = new System.Windows.Forms.Button();
             this.CBCompresiontype = new System.Windows.Forms.ComboBox();
             this.label1 = new System.Windows.Forms.Label();
+            this.button1 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // labelSelectedDirectory
@@ -120,11 +121,23 @@
             this.label1.TabIndex = 8;
             this.label1.Text = "Compression level:";
             // 
+            // button1
+            // 
+            this.button1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.button1.Location = new System.Drawing.Point(626, 17);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(40, 33);
+            this.button1.TabIndex = 9;
+            this.button1.Text = "X";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
             // AddArchive
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(678, 544);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.CBCompresiontype);
             this.Controls.Add(this.btnSelectOutputZip);
@@ -152,5 +165,6 @@
         private System.Windows.Forms.Button btnSelectOutputZip;
         private System.Windows.Forms.ComboBox CBCompresiontype;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button button1;
     }
 }
