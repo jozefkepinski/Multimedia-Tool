@@ -101,6 +101,12 @@
     <Compile Include="AddArchive.Designer.cs">
       <DependentUpon>AddArchive.cs</DependentUpon>
     </Compile>
+    <Compile Include="AppInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AppInfo.Designer.cs">
+      <DependentUpon>AppInfo.cs</DependentUpon>
+    </Compile>
     <Compile Include="ExtractArchive.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -117,6 +123,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="AddArchive.resx">
       <DependentUpon>AddArchive.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AppInfo.resx">
+      <DependentUpon>AppInfo.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ExtractArchive.resx">
       <DependentUpon>ExtractArchive.cs</DependentUpon>

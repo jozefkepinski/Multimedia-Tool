@@ -93,6 +93,7 @@ namespace Multimedia_Tool
         #region About application Submenu
         private void btnAppInfo_Click(object sender, EventArgs e)
         {
+            OpenChildForm(new AppInfo());
             HideSubmenu();
         }
 
