@@ -67,7 +67,7 @@
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(162, 92);
             this.textBox3.TabIndex = 2;
-            this.textBox3.Text = "Features:\r\n-Add to Archive\r\n-Extract Archive\r\n- to be continue";
+            this.textBox3.Text = "Features:\r\n-Add to Archive\r\n-Extract Archive\r\n- to be continued";
             this.textBox3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // textBox4
